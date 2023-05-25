@@ -104,7 +104,7 @@ function restartGame() {
   for (i = 1; i < board.length; i++) {
     // document.getElementById(i).reset();
     fillButton(i, "");
+    board[i] = "";
   }
   pushedButtons = [];
-  board = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 }
