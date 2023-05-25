@@ -31,8 +31,8 @@ function winningAlert(winner) {
  *  to be your main function
  * That interacts with the UI
  */
-const pushedButtons = [];
-const board = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+let pushedButtons = [];
+let board = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 function clickButton(index) {
   //fillButton(index, "x");
 
@@ -101,10 +101,10 @@ function checkWinner() {
 }
 //const row1 =
 function restartGame() {
-  for (i = 1; i < board.length; i++) {
+  for (i = 1; i <= board.length; i++) {
     // document.getElementById(i).reset();
     fillButton(i, "");
-    board[i] = "";
   }
   pushedButtons = [];
+  board = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 }
