@@ -3,7 +3,14 @@
 // First button top left is called 1, last button bottom right is 9
 function fillButton(index, text) {
   // This function fills the button of the send index
+
+  colorButton(index, text);
+
   document.getElementById(index).innerHTML = text;
+}
+function colorButton(index, text) {
+  if (text === "X") document.getElementById(index).style.color = "#ff0000";
+  else if (text === "O") document.getElementById(index).style.color = "#044A25";
 }
 // pre-made a function. You can use this function
 // to present an alert to say someone wins
